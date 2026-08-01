@@ -49,6 +49,17 @@ This template runs the official Headscale container (v0.29.3) on Railway. A ligh
 - Centralized DNS (MagicDNS) for all your devices
 - Full control over node authentication and ACL policies
 
+## Dependencies for
+
+- Tailscale client (free) installed on each device you want in your tailnet
+- A Railway account — no external services, databases, or accounts required
+
+### Deployment Dependencies
+
+- Railway injects `PORT` and `RAILWAY_PUBLIC_DOMAIN` automatically
+- One persistent volume (`/var/lib/headscale`) for the SQLite database and Noise keys
+- DERP relays use Tailscale's public infrastructure (Railway has no UDP egress)
+
 ## Quickstart
 
 After deploying, install the Tailscale client and connect:
@@ -60,6 +71,7 @@ tailscale up --login-server https://<your-railway-domain> --hostname my-device
 Then approve the node from the server (via `railway run` or the web shell):
 
 ```sh
+headscale users create default
 headscale nodes list
 headscale nodes register --user default --key <node-key>
 ```
