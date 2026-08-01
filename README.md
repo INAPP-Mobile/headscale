@@ -2,7 +2,7 @@
 
 An open source, self-hosted implementation of the Tailscale control server — deploy your own private WireGuard mesh VPN on Railway in one click.
 
-[![Deploy to Railway](https://railway.app/button.svg)](https://railway.com/deploy/headscale)
+[![Deploy to Railway](https://railway.app/button.svg)](https://railway.com/deploy/X_Mzas)
 
 ## Why Deploy
 
