@@ -1,0 +1,10 @@
+{
+  "PORT": {
+    "value": "8080",
+    "description": "HTTP port Railway routes to. Railway injects this automatically."
+  },
+  "HEADSCALE_BASE_DOMAIN": {
+    "value": "example.com",
+    "description": "Base domain for MagicDNS hostnames (e.g. ts.yourdomain.com). Must differ from the server's public domain."
+  }
+}
