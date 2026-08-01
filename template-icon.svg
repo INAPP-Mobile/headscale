@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="48" fill="#14171c"/>
+  <!-- mesh network: nodes connected in a hexagonal grid -->
+  <g stroke="#5b8cff" stroke-width="7" stroke-linecap="round" opacity="0.55">
+    <line x1="72" y1="128" x2="128" y2="70"/>
+    <line x1="128" y1="70" x2="184" y2="128"/>
+    <line x1="184" y1="128" x2="128" y2="186"/>
+    <line x1="128" y1="186" x2="72" y2="128"/>
+    <line x1="72" y1="128" x2="128" y2="186"/>
+    <line x1="128" y1="186" x2="184" y2="128"/>
+    <line x1="72" y1="128" x2="184" y2="128"/>
+    <line x1="128" y1="70" x2="128" y2="186"/>
+  </g>
+  <circle cx="72" cy="128" r="16" fill="#5b8cff"/>
+  <circle cx="128" cy="70" r="16" fill="#8fb3ff"/>
+  <circle cx="184" cy="128" r="16" fill="#5b8cff"/>
+  <circle cx="128" cy="186" r="16" fill="#8fb3ff"/>
+  <circle cx="128" cy="128" r="11" fill="#ffffff"/>
+</svg>
