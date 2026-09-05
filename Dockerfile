@@ -6,7 +6,7 @@
 # from Railway-injected env vars ($PORT, $RAILWAY_PUBLIC_DOMAIN).
 FROM headscale/headscale:v0.29.3 AS upstream
 
-FROM alpine:3.20
+FROM alpine:3.24
 
 RUN apk add --no-cache ca-certificates tzdata
 
