@@ -4,7 +4,7 @@
 # The official image has no shell and no bundled config, so Stage 2 layers the
 # binary onto Alpine with a runtime wrapper that renders /etc/headscale/config.yaml
 # from Railway-injected env vars ($PORT, $RAILWAY_PUBLIC_DOMAIN).
-FROM headscale/headscale:v0.29.3 AS upstream
+FROM headscale/headscale:v0.29.4 AS upstream
 
 FROM alpine:3.24
 
