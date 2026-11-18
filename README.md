@@ -36,7 +36,7 @@ BSD-3-Clause — [Headscale on GitHub](https://github.com/juanfont/headscale)
 
 ## Deploy and Host
 
-Click the Deploy to Railway button above. Railway builds the image, provisions the `/var/lib/headscale` volume, and exposes your instance at `https://<project>-production-xxxx.up.railway.app`. No configuration needed to start.
+Click the Deploy to Railway button above. Railway builds the image, provisions the `/var/lib/headscale` volume, and exposes your instance at `https://{project}-production-xxxx.up.railway.app`. No configuration needed to start.
 
 ## About Hosting
 
@@ -65,7 +65,7 @@ This template runs the official Headscale container (v0.29.3) on Railway. A ligh
 After deploying, install the Tailscale client and connect:
 
 ```sh
-tailscale up --login-server https://<your-railway-domain> --hostname my-device
+tailscale up --login-server https://{your-railway-domain} --hostname my-device
 ```
 
 Then approve the node from the server (via `railway run` or the web shell):
@@ -73,7 +73,7 @@ Then approve the node from the server (via `railway run` or the web shell):
 ```sh
 headscale users create default
 headscale nodes list
-headscale nodes register --user default --key <node-key>
+headscale nodes register --user default --key {node-key}
 ```
 
-Your tailnet is ready — `tailscale ping <other-device>` across the mesh.
+Your tailnet is ready — `tailscale ping {other-device}` across the mesh.
